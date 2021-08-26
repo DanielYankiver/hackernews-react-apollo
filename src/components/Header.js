@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link, useHistory } from 'react-router-dom';
-import { AUTH_TOKEN } from './constants';
+import { AUTH_TOKEN } from '../constants';
 
 const Header = () => {
   const history = useHistory();
