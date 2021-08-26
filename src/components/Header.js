@@ -1,5 +1,6 @@
 import React from 'react';
-import { Link, useHistory } from 'react-router-dom';
+import { useHistory } from 'react-router';
+import { Link } from 'react-router-dom';
 import { AUTH_TOKEN } from '../constants';
 
 const Header = () => {
@@ -17,7 +18,10 @@ const Header = () => {
           top
         </Link>
         <div className="ml1">|</div>
-        <Link to="/search" className="ml1 no-underline black">
+        <Link
+          to="/search"
+          className="ml1 no-underline black"
+        >
           search
         </Link>
         {authToken && (
